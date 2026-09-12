@@ -1,0 +1,6 @@
+{
+  "name": "Bowmanscapes | Landscaping & General Building",
+  "description": "Professional landscaping and general building across Malton and surrounding areas in North Yorkshire. Patios, driveways, fencing, turfing, decking, and free quotes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

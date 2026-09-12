@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #d7393e;
+  --color-brand-red-hover: #bf2f34;
+  --color-brand-red-light: #e85559;
+  --color-brand-red-glow: #d7393e33;
+  --color-dark: #111512;
+  --color-dark-surface: #191D1B;
+  --color-dark-card: #141715;
+  --color-offwhite: #F8F9F8;
+  --color-offwhite-surface: #FFFFFF;
+  --color-offwhite-card: #FFFFFF;
+  --color-muted: #667067;
+  --color-muted-light: #8E988F;
+  
+  --font-display: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-dark);
+    background-color: var(--color-offwhite);
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbar and utility classes */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F9F8;
+}
+::-webkit-scrollbar-thumb {
+  background: #11151233;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d7393e88;
+}
+
+.bg-grid-subtle {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(17, 21, 18, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 21, 18, 0.04) 1px, transparent 1px);
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(215, 57, 62, 0.12) 0%, transparent 70%);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-panel-dark {
+  background: rgba(17, 21, 18, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
